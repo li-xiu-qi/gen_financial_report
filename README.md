@@ -325,7 +325,7 @@ USE_ZHIPU_SEARCH=false
 
 ### 4. 配置辅助服务
 
-#### PDF 解析服务（可选但推荐）
+#### PDF 解析服务
 
 本系统的 PDF 解析功能基于mineru实现，并封转成了微服务 [remote_pdf_parse_serve](https://github.com/li-xiu-qi/remote_pdf_parse_serve) 实现，我们将其部署在了 A6000 服务器上提供远程 PDF 解析服务。
 
