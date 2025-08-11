@@ -278,3 +278,17 @@ mypy_cache
 pytest_cache
 search_cache
 caches
+# allow assets images
+!assets/
+!assets/**/*.png
+!assets/**/*.jpg
+!assets/**/*.jpeg
+!assets/**/*.gif
+!assets/**/*.svg
+# allow assets images 
+!assets/ 
+!assets/**/*.png 
+!assets/**/*.jpg 
+!assets/**/*.jpeg 
+!assets/**/*.gif 
+!assets/**/*.svg
