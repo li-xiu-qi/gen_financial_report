@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Web搜索服务 - Python版本
-实现与search.js相同的功能，提供多种网站的搜索和数据抓取接口
+Web搜索服务
 """
 
 import asyncio
