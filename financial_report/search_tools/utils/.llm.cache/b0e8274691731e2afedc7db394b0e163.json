@@ -1,0 +1,42 @@
+{
+    "income": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "# 任务描述\n        1. 根据以下网页内容，查找目标公司的交易所信息和股票代码。\n        2. 交易所取值范围[A, HK, 空字符串]。\n        \n        # 目标公司\n        公司：寒武纪 股票代码：688256 交易所：A股\n        \n        # 网页内容\n        寒武纪-U (688256)_股票行情_走势图—东方财富网\n\n提供寒武纪-U (688256)的行情走势、资金流向、行业概念板块排行、成份股排行、大盘分析、证券聚焦、市场总貌、股吧互动等与寒武纪-U (688256)有关的信息和服务。\n\n寒武纪-U (688256) 股票股价_股价行情_财报_数据报告 - 雪球\n\n寒武纪-U的新闻 寒武纪定增方案 “瘦身”：募资总额下调20% 国内AI芯片龙头企业寒武纪 (688256.SH)选择主动下调募资规模。 7月18日，寒武纪发布公告宣布调整定增方案。根据最 …\n\n寒武紀 (688256.SS) 股價、新聞、報價和記錄 - Yahoo 財經\n\n查看最新的寒武紀 (688256.SS) 股票報價、記錄、新聞及其他重要資訊，助你賣買股票及投資。\n\n寒武纪-U股票_数据_资料_信息 — 东方财富网\n\n2 days ago · 寒武纪-U最新公告 公司公告 沪市公告 深市公告 创业板公告 新股公告 股东大会 定期报告 三板公告 停盘公告 复盘公告 中小板公告 业绩快报 业绩预告\n\n寒武纪-U (688256) 股价、新闻、报价和图表 - 富途牛牛\n\n用富途牛牛查看寒武纪-U (688256)的股票价格、即时报价、最新新闻、历史走势图、财务信息和行情。\n        \n        # 输出格式\n        输出json对象，包括code和market字段：\n        { \"code\": \"股票代码\", \"market\": \"交易所\" }\n        \n        # 输出约束\n        > 直接输出\n        > 仅输出json，禁用任何解释。"
+            }
+        ]
+    },
+    "result": {
+        "id": "019831ce624267b2659cd98f7cd207ba",
+        "choices": [
+            {
+                "finish_reason": "stop",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "content": "```json\n{ \"code\": \"688256\", \"market\": \"A\" }\n```",
+                    "refusal": null,
+                    "role": "assistant",
+                    "annotations": null,
+                    "audio": null,
+                    "function_call": null,
+                    "tool_calls": null
+                }
+            }
+        ],
+        "created": 1753182265,
+        "model": "deepseek-ai/DeepSeek-V3",
+        "object": "chat.completion",
+        "service_tier": null,
+        "system_fingerprint": "",
+        "usage": {
+            "completion_tokens": 19,
+            "prompt_tokens": 472,
+            "total_tokens": 491,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        },
+        "uuid": "b0e8274691731e2afedc7db394b0e163"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "income": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "# 任务描述\n        1. 根据以下网页内容，查找目标公司的交易所信息和股票代码。\n        2. 交易所取值范围[A, HK, 空字符串]。\n        \n        # 目标公司\n        公司：云从科技 股票代码：00003 交易所：香港\n        \n        # 网页内容\n        云从科技-UW (688327)_股票行情_走势图—东方财富网\n\n提供云从科技-UW (688327)的行情走势、资金流向、行业概念板块排行、成份股排行、大盘分析、证券聚焦、市场总貌、股吧互动等与云从科技-UW (688327)有关的信息和服务。\n\n云从科技-UW (688327) 股票股价_股价行情_财报_数 …\n\n云从科技-UW的公告 公告 云从科技-UW：中信建投证券股份有限公司关于云从科技集团股份有限公司2024年年度报告信息披露监管问询函的核查意见 网页链接 公告 云从科技-UW：天健会计师事务所（特殊普通合伙）关于云从科技集团股 …\n\ncloudwalk - 云从科技\n\n云从科技成立于2015年，是第一家在科创板成功上市的人工智能平台公司，股票代码为688327。公司通过像人一样思考和工作的人机协同操作系统（CWOS），基于数据要素进行整合视觉、 …\n\n云从科技 (688327)股票股价,行情,新闻,财报数据_新浪财经_新浪网\n\nJul 9, 2025 · 新浪财经为您提供云从科技 (688327)股票实时行情走势,实时资金流向,实时新闻资讯,研究报告,股吧互动,交易信息,个股点评,公告,财务指标分析等与云 ...\n\n云从科技集团股份有限公司 - 爱企查\n\n2 days ago · 简介： 1、基本情况 云从科技集团股份有限公司是一家专精特新中小企业、高新技术企业 (2023)、小微企业、科技小巨人企业，是云从科技集团旗下的企业。该公司成立于2015年03月27日，位于广州市南沙区南沙街金隆路37 …\n        \n        # 输出格式\n        输出json对象，包括code和market字段：\n        { \"code\": \"股票代码\", \"market\": \"交易所\" }\n        \n        # 输出约束\n        > 直接输出\n        > 仅输出json，禁用任何解释。"
+            }
+        ]
+    },
+    "result": {
+        "id": "019831ce54cfe4277a1026340d783fa3",
+        "choices": [
+            {
+                "finish_reason": "stop",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "content": "{\"code\": \"688327\", \"market\": \"A\"}",
+                    "refusal": null,
+                    "role": "assistant",
+                    "annotations": null,
+                    "audio": null,
+                    "function_call": null,
+                    "tool_calls": null
+                }
+            }
+        ],
+        "created": 1753182262,
+        "model": "deepseek-ai/DeepSeek-V3",
+        "object": "chat.completion",
+        "service_tier": null,
+        "system_fingerprint": "",
+        "usage": {
+            "completion_tokens": 13,
+            "prompt_tokens": 502,
+            "total_tokens": 515,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        },
+        "uuid": "627ea2b32c82aabf7687d74613386f35"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "income": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "# 任务描述\n        1. 根据以下网页内容，查找目标公司的交易所信息和股票代码。\n        2. 交易所取值范围[A, HK, 空字符串]。\n        \n        # 目标公司\n        公司：依图科技 股票代码：00002 交易所：香港\n        \n        # 网页内容\n        依图科技终止上市审核：冲击科创板「AI第一股」失败 - 知乎\n\nJul 3, 2021 · AI 创业公司在国内市场 IPO 真就这么困难？7 月 2 日晚上交所消息，决定终止对依图科技首次公开发行存托凭证并在科创板上市的审核。 机器之心报道，机器之心编辑部。 依图的上市 …\n\n三年半亏损72.2亿，“AI独角兽”依图科技如何撑起百亿估 …\n\n11月5日，上交所官网信息显示，依图科技有限公司（Yitu Holdings，以下简称“依图科技”）科创板IPO申请日前已获受理，国泰君安证券为其保荐机构。 根据此次发行方案，由于公司注册地为开曼群岛，因此依图科技将作为红筹公司，通过CDR方式 …\n\n关于我们 | 依图科技\n\n朱珑博士，全球杰出人工智能科学家。2012年回国创立依图科技。 朱珑博士2008年获得加州大学洛杉矶分校（UCLA）统计学博士，师从计算机视觉奠基人Alan Yuille教授（IEEE 院士，师承物理大 …\n\n依图科技: Revenue, Worth, Valuation & Competitors 2025\n\n依图科技 has an estimated revenue of $75.6M, and 403 employees. Alternatives of 依图科技 are QuantiTech, Fleetio and ChipRewards.\n\n上海依图网络科技有限公司_百度百科\n\n概览发展历程企业文化公司荣誉上海市一家网络科技类企业上海依图网络科技有限公司成立于2012年9月，由朱珑、林晨曦共同创立。依图科技人工智能技术的应用领域包括：智能安防、依图医疗、智慧金融、智慧城市、智能硬件 …2017年7月，依图科技在由美国国家标准技术局（NIST）主办的全球人脸识别测试（FRVT）中夺得第一，成绩在千万分之一误报下达到识别准确率95.5%，是当时全球工业界在此项指标下的最好水平。根据2018年6月的官方报告，依图已将这一指标提升到了接近极限的水平，即在千万分 …See more on baike.baidu.com\n        \n        # 输出格式\n        输出json对象，包括code和market字段：\n        { \"code\": \"股票代码\", \"market\": \"交易所\" }\n        \n        # 输出约束\n        > 直接输出\n        > 仅输出json，禁用任何解释。"
+            }
+        ]
+    },
+    "result": {
+        "id": "019831ce4716afe0434ed62c92839a1a",
+        "choices": [
+            {
+                "finish_reason": "stop",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "content": "{\"code\": \"00002\", \"market\": \"HK\"}",
+                    "refusal": null,
+                    "role": "assistant",
+                    "annotations": null,
+                    "audio": null,
+                    "function_call": null,
+                    "tool_calls": null
+                }
+            }
+        ],
+        "created": 1753182259,
+        "model": "deepseek-ai/DeepSeek-V3",
+        "object": "chat.completion",
+        "service_tier": null,
+        "system_fingerprint": "",
+        "usage": {
+            "completion_tokens": 13,
+            "prompt_tokens": 582,
+            "total_tokens": 595,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        },
+        "uuid": "5cfe252d373768417cf64f10bf4fb526"
+    }
+}

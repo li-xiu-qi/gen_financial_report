@@ -1,0 +1,42 @@
+{
+    "income": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "# 任务描述\n        1. 根据以下网页内容，查找目标公司的交易所信息和股票代码。\n        2. 交易所取值范围[A, HK, 空字符串]。\n        \n        # 目标公司\n        公司：旷视科技 股票代码：00001 交易所：香港\n        \n        # 网页内容\n        旷视科技 (A04701) 股票股价_股价行情_财报_数据报告 - 雪球\n\n雪球为您提供旷视科技 (A04701)股票实时行情,资金流向,新闻资讯,研究报告,社区互动,交易信息,个股点评,公告,财务指标分析等与旷视科技 (A04701)股票相关的信息与服务.\n\n过会后卡壳22个月，旷视科技科创板IPO注册程序再次 …\n\nJul 16, 2023 · 人工智能独角兽、AI四小龙之一的旷视科技有限公司（简称“旷视科技”）恢复了注册程序。据上海证券交易所网站信息，7月15日，旷视科技因《首次公开发行股票注册管理办\n\n旷视科技_百度百科\n\n概览最新动态发展历程科研实力核心产品所获荣誉人工智能品牌旷视科技创立于2011年，是一个人工智能产品和解决方案品牌。 于2011年由印奇、唐文斌和杨沐三位创始人成立。 旷视科技以深度学习为核心竞争力 ，融合算法、算力和数据 ，打造出 “三位一体”的新一代AI生产力平台旷视Brain++， 并开源其核心——深度学习框架“天元”。依托Brain++，旷视专注于算法能产生极大价值的领域——个人物联网、城市物联网、供应链物 …旷视总部位于北京，拥有近3000名员工，并在北京、上海、南京、成都等地都设有研发中心。See more on baike.baidu.com\n\n《旷视科技深度研究报告》（含财务、估值） $旷视科技 (KSKJ)\n\nSep 15, 2019 · $旷视科技 (KSKJ)$ 旷视科技于2019年8月25日在港交所提交了招股说明书，作为一个在科技圈和资本圈知名度极高的人工智能公司，这次公司信息的集中披露自然是吸引了一波 …\n\nAI企业旷视科技科创板IPO获批，拟募资60.18亿元_科学湃_澎湃 …\n\n9月9日，上海证券交易所科创板上市委员会2021年第66次审议会议披露，旷视科技（Megvii Technology Limited）科创板上市首发获通过，成为“AI四小龙”中第二家登陆科创板的公司。 旷 …\n        \n        # 输出格式\n        输出json对象，包括code和market字段：\n        { \"code\": \"股票代码\", \"market\": \"交易所\" }\n        \n        # 输出约束\n        > 直接输出\n        > 仅输出json，禁用任何解释。"
+            }
+        ]
+    },
+    "result": {
+        "id": "019831ce3859792c451d5f1278b44fb9",
+        "choices": [
+            {
+                "finish_reason": "stop",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "content": "{\"code\": \"00001\", \"market\": \"HK\"}",
+                    "refusal": null,
+                    "role": "assistant",
+                    "annotations": null,
+                    "audio": null,
+                    "function_call": null,
+                    "tool_calls": null
+                }
+            }
+        ],
+        "created": 1753182255,
+        "model": "deepseek-ai/DeepSeek-V3",
+        "object": "chat.completion",
+        "service_tier": null,
+        "system_fingerprint": "",
+        "usage": {
+            "completion_tokens": 13,
+            "prompt_tokens": 592,
+            "total_tokens": 605,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        },
+        "uuid": "0b4c8c2c678dc6e4571e1edf3e5e74d8"
+    }
+}

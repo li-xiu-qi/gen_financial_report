@@ -1,0 +1,42 @@
+{
+    "income": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "# 任务描述\n        1. 根据以下网页内容，查找目标公司的交易所信息和股票代码。\n        2. 交易所取值范围[A, HK, 空字符串]。\n        \n        # 目标公司\n        公司：科大讯飞 股票代码：002230 交易所：A股\n        \n        # 网页内容\n        科大訊飛 (002230.SZ) 股價、新聞、報價和記錄 - Yahoo 財經\n\n查看最新的科大訊飛 (002230.SZ) 股票報價、記錄、新聞及其他重要資訊，助你賣買股票及投資。\n\n科大讯飞 (002230) 股票股价_股价行情_财报_数据报告 - 雪球\n\n科大讯飞的热门讨论 讨论 科大讯飞 (SZ002230) 07-10 19:39 科大讯飞：2025年半年度业绩预告 网页链接 OpenAI扔出王炸！ChatGPT Agent引爆AI革命，数据ETF又要起飞？ 银杏君 07-18 …\n\n科大讯飞 (002230)股票股价,行情,新闻,财报数据_新浪财经_新浪网\n\nJul 11, 2025 · 新浪财经为您提供科大讯飞 (002230)股票实时行情走势,实时资金流向,实时新闻资讯,研究报告,股吧互动,交易信息,个股点评,公告,财务指标分析等与 ...\n\n科大讯飞 (002230)个股资金流向查询_个股行情_同花顺财经\n\n提供科大讯飞 (002230)五档盘口、逐笔交易等实时行情数据；汇总科大讯飞 (002230)基本资料及重大新闻、研究报告及行业资讯，解读科大讯飞 (002230)主力资金动向、财务数据，为投资 …\n\n秒懂上市公司——科大讯飞（002230） - 知乎\n\nOct 15, 2023 · 秒懂上市公司——科大讯飞（002230） 公司介绍：技术弄潮 业务聚焦公司是人工智能行业龙头之一，自 1999 年创业以来就致力于智能语音、 …\n        \n        # 输出格式\n        输出json对象，包括code和market字段：\n        { \"code\": \"股票代码\", \"market\": \"交易所\" }\n        \n        # 输出约束\n        > 直接输出\n        > 仅输出json，禁用任何解释。"
+            }
+        ]
+    },
+    "result": {
+        "id": "019831ce8f8623f51848f57f3cf88b42",
+        "choices": [
+            {
+                "finish_reason": "stop",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "content": "{\"code\": \"002230\", \"market\": \"A\"}",
+                    "refusal": null,
+                    "role": "assistant",
+                    "annotations": null,
+                    "audio": null,
+                    "function_call": null,
+                    "tool_calls": null
+                }
+            }
+        ],
+        "created": 1753182277,
+        "model": "deepseek-ai/DeepSeek-V3",
+        "object": "chat.completion",
+        "service_tier": null,
+        "system_fingerprint": "",
+        "usage": {
+            "completion_tokens": 13,
+            "prompt_tokens": 497,
+            "total_tokens": 510,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        },
+        "uuid": "48cf1ab83eea1d96d229e15d44e7bb64"
+    }
+}

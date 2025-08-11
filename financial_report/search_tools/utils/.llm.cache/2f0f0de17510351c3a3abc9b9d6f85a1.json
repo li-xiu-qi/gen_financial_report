@@ -1,0 +1,42 @@
+{
+    "income": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "# 任务描述\n1. 根据以下网页内容，查找目标公司的交易所信息和股票代码。\n2. 交易所取值范围[A, HK, 空字符串]。\n# 目标公司\n公司：旷视科技 股票代码：00030 交易所：香港\n# 网页内容\n华之杰 (603400) 最新动态_F10_同花顺金融服务网\n动态_F10_同花顺金融服务网\n0jqka.com.cn\n大事_F10_同花顺金融服务网\n资料_F10_同花顺金融服务网\n# 输出格式\n输出json对象，包括code和market字段：\n{ \"code\": \"股票代码\", \"market\": \"交易所\" }\n# 输出约束\n> 直接输出\n> 仅输出json，禁用任何解释。"
+            }
+        ]
+    },
+    "result": {
+        "id": "0198322bb6f86b4bb15177ea56d8933f",
+        "choices": [
+            {
+                "finish_reason": "stop",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "content": "```json\n{ \"code\": \"00030\", \"market\": \"HK\" }\n```",
+                    "refusal": null,
+                    "role": "assistant",
+                    "annotations": null,
+                    "audio": null,
+                    "function_call": null,
+                    "tool_calls": null
+                }
+            }
+        ],
+        "created": 1753188382,
+        "model": "deepseek-ai/DeepSeek-V3",
+        "object": "chat.completion",
+        "service_tier": null,
+        "system_fingerprint": "",
+        "usage": {
+            "completion_tokens": 19,
+            "prompt_tokens": 170,
+            "total_tokens": 189,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        },
+        "uuid": "2f0f0de17510351c3a3abc9b9d6f85a1"
+    }
+}

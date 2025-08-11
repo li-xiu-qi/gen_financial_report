@@ -1,0 +1,42 @@
+{
+    "income": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "# 任务描述\n1. 给出目标公司的上市信息，包括公司名称、股票代码和交易所。\n2. 仅查找大陆及香港交易所。如果不在这两地交易所，market返回空字符串，code返回-1。\n3. 交易所取值范围[A, HK, 空字符串]。\n# 目标公司\n名称：商汤科技（00020.HK）\n# 输出格式\n{ \"name\": \"公司名称\", \"code\": \"股票代码\", \"market\": \"交易所\" }\n# 输出约束\n> 直接输出\n> 仅输出json，禁用任何解释。"
+            }
+        ]
+    },
+    "result": {
+        "id": "019831cdad030e21a04db4ccb8eafba6",
+        "choices": [
+            {
+                "finish_reason": "stop",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "content": "```json\n{ \"name\": \"商汤科技\", \"code\": \"00020\", \"market\": \"HK\" }\n```",
+                    "refusal": null,
+                    "role": "assistant",
+                    "annotations": null,
+                    "audio": null,
+                    "function_call": null,
+                    "tool_calls": null
+                }
+            }
+        ],
+        "created": 1753182219,
+        "model": "deepseek-ai/DeepSeek-V3",
+        "object": "chat.completion",
+        "service_tier": null,
+        "system_fingerprint": "",
+        "usage": {
+            "completion_tokens": 27,
+            "prompt_tokens": 128,
+            "total_tokens": 155,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        },
+        "uuid": "2a85a8441f1ae149b07b507ed13f16f7"
+    }
+}

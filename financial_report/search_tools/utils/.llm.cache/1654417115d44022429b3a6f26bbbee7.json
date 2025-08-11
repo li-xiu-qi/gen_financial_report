@@ -1,0 +1,42 @@
+{
+    "income": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "# 任务描述\n1. 根据以下网页内容，查找目标公司的交易所信息和股票代码。\n2. 交易所取值范围[A, HK, 空字符串]。\n# 目标公司\n公司：虹软科技 股票代码：688088 交易所：A股\n# 网页内容\n汉朔科技 (301275) 最新动态_F10_同花顺金融服务网\n态_F10_同花顺金融服务网\n资料_F10_同花顺金融服务网\n动态_F10_同花顺金融服务网\n- 10jqka.com.cn\n# 输出格式\n输出json对象，包括code和market字段：\n{ \"code\": \"股票代码\", \"market\": \"交易所\" }\n# 输出约束\n> 直接输出\n> 仅输出json，禁用任何解释。"
+            }
+        ]
+    },
+    "result": {
+        "id": "0198322c23a1cd61fdfb3e1ff9d04a06",
+        "choices": [
+            {
+                "finish_reason": "stop",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "content": "{\"code\": \"301275\", \"market\": \"A\"}",
+                    "refusal": null,
+                    "role": "assistant",
+                    "annotations": null,
+                    "audio": null,
+                    "function_call": null,
+                    "tool_calls": null
+                }
+            }
+        ],
+        "created": 1753188410,
+        "model": "deepseek-ai/DeepSeek-V3",
+        "object": "chat.completion",
+        "service_tier": null,
+        "system_fingerprint": "",
+        "usage": {
+            "completion_tokens": 13,
+            "prompt_tokens": 173,
+            "total_tokens": 186,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        },
+        "uuid": "1654417115d44022429b3a6f26bbbee7"
+    }
+}

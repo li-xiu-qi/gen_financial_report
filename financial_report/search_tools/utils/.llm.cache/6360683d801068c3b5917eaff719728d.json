@@ -1,0 +1,42 @@
+{
+    "income": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "# 任务描述\n1. 根据以下网页内容，查找目标公司的交易所信息和股票代码。\n2. 交易所取值范围[A, HK, 空字符串]。\n# 目标公司\n公司：寒武纪 股票代码：688256 交易所：A股\n# 网页内容\n寒武纪 (688256) 最新动态_F10_同花顺金融服务网\n态_F10_同花顺金融服务网\n0jqka.com.cn\n料_F10_同花顺金融服务网\n动态_F10_同花顺金融服务网\n# 输出格式\n输出json对象，包括code和market字段：\n{ \"code\": \"股票代码\", \"market\": \"交易所\" }\n# 输出约束\n> 直接输出\n> 仅输出json，禁用任何解释。"
+            }
+        ]
+    },
+    "result": {
+        "id": "0198322bdee68ee0382f9c1bfaa36da0",
+        "choices": [
+            {
+                "finish_reason": "stop",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "content": "```json\n{ \"code\": \"688256\", \"market\": \"A\" }\n```",
+                    "refusal": null,
+                    "role": "assistant",
+                    "annotations": null,
+                    "audio": null,
+                    "function_call": null,
+                    "tool_calls": null
+                }
+            }
+        ],
+        "created": 1753188392,
+        "model": "deepseek-ai/DeepSeek-V3",
+        "object": "chat.completion",
+        "service_tier": null,
+        "system_fingerprint": "",
+        "usage": {
+            "completion_tokens": 19,
+            "prompt_tokens": 171,
+            "total_tokens": 190,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        },
+        "uuid": "6360683d801068c3b5917eaff719728d"
+    }
+}

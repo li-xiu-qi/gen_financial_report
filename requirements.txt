@@ -1,0 +1,40 @@
+# 智能研究报告生成系统依赖包
+# Generated from pyproject.toml
+
+# 核心依赖
+aiohttp>=3.12.14
+beautifulsoup4>=4.13.4
+bs4>=0.0.2
+cachetools>=6.1.0
+comtypes>=1.4.11
+diskcache>=5.6.3
+docx2pdf>=0.1.8
+faiss-cpu>=1.11.0.post1
+fake-useragent>=2.2.0
+fastapi>=0.116.1
+jieba>=0.42.1
+markdownify>=1.1.0
+modelscope>=1.28.0
+numpy>=2.3.1
+openai>=1.95.1
+pandoc>=2.4
+playwright>=1.53.0
+pyecharts>=2.0.8
+pypandoc>=1.15
+pyquery>=2.0.1
+python-docx>=1.2.0
+python-dotenv>=1.1.1
+qdrant-client>=1.14.3
+selenium>=4.34.2
+snapshot-selenium>=0.0.2
+tiktoken>=0.9.0
+trafilatura>=2.0.0
+transformers>=4.53.2
+uvicorn>=0.35.0
+whoosh>=2.7.4
+zhipuai>=2.1.5.20250724
+
+# 安装说明：
+# pip install -r requirements.txt
+# 或者使用 uv：
+# uv pip install -r requirements.txt
